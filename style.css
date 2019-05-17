@@ -1,0 +1,475 @@
+html {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	line-height: 1.5em;
+	scroll-behavior: smooth;
+}
+
+section {
+	height: 100vh;
+	font-size: 15px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+}
+
+p {
+	width: 70%;
+	margin: auto;
+	padding-bottom: 1em;
+}
+
+#container {
+	padding: 1em;
+}
+
+#introduction {
+	background-color: black;
+	color: white;
+	padding: .5em;
+	padding-top: 1em;
+	text-align: center;
+	width: 100%;
+	margin: auto;
+}
+
+#personal {
+	background-color: white;
+	color: black;
+	padding: .5em;
+	text-align: right;
+	margin: auto 0;
+	width: 100%;
+	max-width: 100% ;
+	height: 100%;
+	margin-left: auto ;
+	margin-right: auto ;
+}
+
+#school {
+	background-color: #ed1c24;
+	color: white;
+	padding: .5em;
+	text-align: left;
+	width: 100%;
+	margin: auto;
+	height: 100%;
+}
+
+#work {
+	background-color: black;
+	color: white;
+	padding: .5em;
+	text-align: right;
+	width: 100%;
+	margin: auto;
+	padding-top: 1em;
+	padding-bottom: 2em;
+	height: 100%;
+}
+
+#contact {
+	background-color: white;
+	color: black;
+	padding: .5em;
+	text-align: left;
+	width: 100%;
+	margin: auto;
+	height: 100%;
+}
+
+#personal h1, #contact h1 {
+	color: #ed1c24;
+	text-align: center;
+	padding-top: 1em; 
+	padding-bottom: .5em;
+	font-size: 25pt;
+}
+
+#introduction h1, #school h1, #work h1 {
+	color: white;
+	text-align: center;
+	padding-top: 1em;
+	padding-bottom: .5em;
+	font-size: 25pt;
+}
+
+/* Introduction Start */
+.intro_image {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 8em;
+}
+
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: #ed1c24;
+	background-color: white;
+	width: 7em;
+	font-size: 30pt;
+	padding: .5em;
+	margin-top: 2em;
+	margin-bottom: 1em;
+}
+
+a.button:hover {
+	color: white;
+	background-color: #ed1c24;
+}
+/* Introduction End */
+
+/* Personal Information Start */
+.personal_container {
+	padding-top: 1em;
+	width: 70%;
+	margin: auto;
+	display: flex;
+	position: relative;
+	text-align: center;
+}
+
+.personal_image {
+	display: inline-block;
+	width: 450px;
+	height: 500px;
+	flex: 33.33%;
+	padding: 5px;
+}
+
+#personal figcaption {
+	text-align: center;
+	color: #ed1c24;
+	font-size: 90%;
+}
+
+.personal_content {
+	width: 55%;
+	margin: auto;
+	text-align: center;
+	padding-bottom: 5em;
+	overflow: auto;
+	text-align: right;
+}
+
+.personal_pie {
+	float: left;
+	padding-right: 4em;
+}
+
+/* Personal Information End */
+
+/* School Start */
+.school_intro_text {
+	text-align: center;
+	width: 55%;
+	padding-top: 1em;
+}
+
+.school_group {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+#school figcaption {
+	color: white;
+	text-align: center;
+	font-size: 90%;
+}
+
+.school_football {
+	width: 55%;
+	margin: auto;
+	padding-top: 2em;
+	padding-bottom: 5em;
+	overflow: auto;
+}
+
+.school_football_text {
+	text-align: left;
+	padding-left: 0;
+	padding-right: 4em;
+	width: 900px;
+	padding-top: 1em;
+}
+
+.football_image {
+	float: right;
+	padding-left: 5em;
+	margin-right: 3.5em;
+}
+/* School End */
+
+/* Work Timeline Start */
+.work_text {
+	text-align: center;
+	width: 50%;
+	padding-bottom: 1em;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.work_p {
+	text-align: center;
+	color: black;
+	font-size: 18px;
+}
+
+.work_p:hover {
+	color: #ed1c24;
+}
+
+.work_timeline {
+	position: relative;
+	max-width: 1200px;
+	margin: 0 auto;
+	margin-bottom: 1em;
+	margin-top: 1em;
+}
+
+.work_timeline::after {
+	content: '';
+	position: absolute;
+	width: 6px;
+	background-color: white;
+	top: 0;
+	bottom: 0;
+	left: 50%;
+	margin-left: -3px;
+}
+
+.work_container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+  color: #ed1c24;
+  font-size: 15px;
+}
+
+.work_container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  left: 50%;
+  text-align: left;
+}
+
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+.right::after {
+  left: -16px;
+}
+
+.work_content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+@media screen and (max-width: 600px) {
+  .work_timeline::after {
+    left: 31px;
+  }
+
+  .work_container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  .work_container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  .left::after, .right::after {
+    left: 15px;
+  }
+
+  .right {
+    left: 0%;
+  }
+}
+
+/* Work Timeline End */
+
+/* Contact Form Start */
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	-o-font-smoothing:antialiased;
+	font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+}	
+
+body {
+	font-weight: 100;
+	font-size: 15px;
+	line-height: 30px;
+}
+
+.form_container {
+	max-width: 400px;
+	width: 100%;
+	margin: 0 auto;
+	padding-bottom: 4em;
+	position: relative;
+	padding-top: 2em;
+}
+
+#contact_form input[type="text"],
+#contact_form input[type="text"],
+#contact_form input[type="email"],
+#contact_form input[type="tel"],
+#contact_form textarea,
+#contact_form button[type="submit"] {
+	font-size: 12px/16px;
+}
+
+#contact_form {
+	background: #F9F9F9;
+	padding: 25px;
+	margin: 150px 0;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+#contact_form h2 {
+  display: block;
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  background: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+}
+
+#contact input[type="text"]:hover,
+#contact input[type="email"]:hover,
+#contact input[type="tel"]:hover,
+#contact input[type="url"]:hover,
+#contact textarea:hover {
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -moz-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  border: 1px solid #aaa;
+}
+
+#contact textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none;
+}
+
+#contact button[type="submit"] {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: #ed1c24;
+  color: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+#contact button[type="submit"]:hover {
+  background: black;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.copyright {
+  text-align: center;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  outline: 0;
+  border: 1px solid #aaa;
+}
+
+::-webkit-input-placeholder {
+  color: #888;
+}
+
+:-moz-placeholder {
+  color: #888;
+}
+
+::-moz-placeholder {
+  color: #888;
+}
+
+:-ms-input-placeholder {
+  color: #888;
+}
+/* Contact Form End */
